@@ -23,6 +23,7 @@ Outros tópicos e ferramentas apresentados em aula
 
 ⚠️ Os códigos têm fins educacionais. Alguns exemplos podem estar simples ou inacabados, pois refletem atividades desenvolvidas durante o processo de aprendizado.
 
+
 <div style="display: inline_block"><br>
   <img align="center" alt="Rafa-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="Rafa-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
@@ -30,6 +31,8 @@ Outros tópicos e ferramentas apresentados em aula
   <img align="center" alt="Rafa-PHP" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
   
 </div>
+
+  ##
  
 <div> 
   <a href="http://www.youtube.com/@luis-o_o-h" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
