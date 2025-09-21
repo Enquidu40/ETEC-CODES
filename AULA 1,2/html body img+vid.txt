@@ -1,0 +1,10 @@
+<!--Cabeçalho h1...h6-->
+<h1> @linguiça de feijão queimado </h1>
+<br><br><br><br>
+<p>Sé loko</p>
+<h1>Kiribati</h1>
+<img src="01.jpg" alt="Trulli" width="500" height="333">
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
