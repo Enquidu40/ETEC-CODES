@@ -1,0 +1,207 @@
+/* ============================*/
+/* RESET E ESTILOS GERAIS */
+/* ============================*/
+
+/*8 Reset basico para remover margens e paddings padrão */
+*{ 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Faz com que padding não some à largura */
+ }
+
+ /* Estilos gerais do corpo da pagina */
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #111 /* Fundo preto */
+	color: #eee /* Texto claro para contraste */
+	line-height:  1.6; / /* Espaçamento entre linhas */
+}
+
+/* ================================ */
+/* Menu Responsivo */
+/* ================================*/
+
+/* Esconde a checkbox que controla o menu mobile */
+#bt_menu {
+	display:  none;
+}
+/* Estilo do botão do menu hamburguer (aparece em mobile) */
+label[for="bt_menu"] {
+	display: none; /* inicialmente escondido */
+	padding: 10px;
+	background-color: #000 /* preto puro */
+	color: white;
+	font-size: 24px;
+	cursor: pointer; /8 cursor de click*/
+	text-align: center;
+}
+
+/* Container principal do menu */
+.menu{
+	background-color: #000
+	width:  100%;
+}
+
+/* lista não ordenada do menu */
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+/* Itens do menu principal */
+.menu > ul > li {
+	position: relative; /* permite posicionamento absoluto nos submenus */
+
+}
+
+/* links do menu principal*/
+.menu > ul > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	transition: background 0.3s; /* transição suave */
+}
+
+/* Efeito hover nos links do menu */
+.menu > ul > li > a:hover {
+	background-color: #222; /* Preto mais claro */
+}
+
+/* Submenus (dropdown) */
+.menu ul ul {
+	display: nome; /* Escondido por padrão */
+	position: absolute;
+	top: 100%; /* posiciona abaixo do item pai */
+	left: 0;
+	background-color: #222; /* Preto mais claro */
+	min-width: 200px;
+	z-index: 1000; /* Garente que fique acima de outros elementos */
+}
+
+/* itens dos submenus */
+.menu ul ul li a {
+	border-bottom: 1px solid #333; /* divisoria sutil */
+}
+
+/* Links dos submenus */
+.menu ul ul li a {
+	padding: 12px 20px;
+	color: white;
+	display: block;
+}
+
+/* mostra submenu quando o item pai recebe hover */
+.menu > ul > li:hover > ul {
+	display: block;
+}
+
+/*==========================*/
+/* conteudo principal */
+/*==========================*/
+
+/* container do conteudo principal */
+.content {
+	padding: 20px;
+	max-width: 1200px;
+	margin: 20px auto;
+	background-color: #222;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 3); /* sombra mais escura */
+}
+
+/* Titulo principal */
+.content h1 {
+	text-align: center;
+	margin-bottom: 30px;
+	color #fff; /* Branco puro */
+	padding-top: 20px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* sombra de texto */
+}
+
+/*=======================================*/
+/*Container dos produtos*/
+/*=======================================*/
+
+/*Grid container para os produtos */
+.boxes-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 4 colunas*/
+	gap: 20px; /* Espaço entre os itens */
+	width: 100%;
+	padding: 20px;
+}
+
+/*==========================================*/
+/*Estilo do produto*/
+/*==========================================*/
+
+/*Card de produto individual*/
+.product-box {
+	background-color: #333;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	transition: transform 0.3s ease, box-shadow 0.3s ease /* Animações suaves */;
+	border: 1px solid #444; /*borda sutil */
+}
+/*Efeito hover no card */
+.product-box img{
+	width: 100%;
+	height: 100px;
+	object-fit: cover; /* Mnt´m propo0rção cobrindo o espaço */
+}
+/* Imagem do produto */
+.product-box h3{
+	padding: 0 15px;
+	color: #ccc; /* Cinza claro */
+	font-size: 0.9rem;
+	margin-bottom: 15px;
+	min-height: 60px; /* Altura mínima para uniformidade */
+}
+
+/* Preço do produto */
+.price{
+	display: block;
+	padding: 0 15px 15px;
+	color: #fff; /* branco */
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+/*========================*/
+/* RESPONSIVIDADE
+/*=======================*/
+
+/* Telas até 1024px (notebook menores) */
+@media (max-width:  1024px){
+	.boxes-container{
+		grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+	}
+}
+
+/*	Telas até 768px (tablets) */
+@media (max-width:  768px){
+	/* Mostra o botão do menu mobile */
+	label[for="bt_menu"] {
+		display: block;
+	}
+}
+
+/* Altera o menu para versão mobile */
+
+.menu ul {
+	display: none;
+	flex-direction: column;
+}
+
+/* Mostra o menu quando o checkbox está marcado */
+#bt_menu: checked ~ .menu ul{
+	display: flex;
+}
+
+
