@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hertz - Pop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/jazz.css">
+    <link rel="icon" href="img/icone.ico">
+</head>
+<body>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Categorias</a>
+                <ul>
+                    <li><a href="jazz.html">Pop</a></li>
+                    <li><a href="rap.html">Rap</a></li>
+                    <li><a href="rock.html">Rock</a></li>
+                    <li><a href="#">Jazz</a></li>
+                    <li><a href="flashback.html">Flashback</a></li>
+                    <li><a href="pagode.html">Pagode</a></li>
+                    <li><a href="mpb.html">Mpb</a></li>
+                    <li><a href="eletronic.html">Eletronic</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        </ul>
+    </nav>
+    <div class="music-player-container">
+        <div class="player-container">
+            <div class="main-player">
+                <h2 class="player-title">Seção de Jazz:</h2>
+                
+                <div class="album-art">
+                    <img id="album-cover" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Capa do Álbum">
+                </div>
+                
+                <div class="current-song">Selecione um artista</div>
+                
+                <div class="player-controls">
+                    <div class="controls-row">
+                        <button class="player-btn" id="prev-btn" title="Anterior">⏮</button>
+                        <button class="player-btn" id="play-btn" title="Play">▶</button>
+                        <button class="player-btn" id="pause-btn" title="Pause">⏸</button>
+                        <button class="player-btn" id="next-btn" title="Próxima">⏭</button>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <progress id="progress" value="0" max="100"></progress>
+                        <div class="time-display">
+                            <span id="current-time">0:00</span>
+                            <span id="total-time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="playlist-section">
+                <h2>Playlist</h2>
+                <ul class="playlist">
+                    <!-- As músicas serão carregadas dinamicamente via JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+<main class="content">
+    <h1>Selecione um álbum.</h1>
+    <div class="genre-description">
+        <p>O jazz é um dos gêneros musicais mais influentes do mundo, com raízes na cultura afro-americana e que evoluiu para diferentes vertentes ao longo dos anos.</p>
+    </div>
+    <!-- Container expandido para os artistas -->
+    <div class="full-width-container">
+        <div class="boxes-container">
+            <div class="artist-box">
+                <img src="data:image/webp;base64,UklGRmIbAABXRUJQVlA4WAoAAAAMAAAANwEANwEAVlA4IIAUAACwnACdASo4ATgBPvVysFMqpqUwJXNb2gAeiWltyDBosKBi4GL88M9e/M7rf2jPpBo8vv6vZ8zyf/v54f3T/3JEg+xmsQTeVeN5se0byYIKP9JoQD14Tj4nNRz2KD6TDQUQL4fM6Bw3oNR78AzJzKCVA4oPnv6DzjuRFZZmB3Nf8rgHdGB87NeD9+UdU8hF87rJDKv1reascLlpWpaJH/shKorrFVFAVX2BPl9spnXCiv3vPBeBAeeQZIOthYYS94ep9r5QbVcB4lXSxunz51CQPfrlEWaXhABqcxwY0fDAcnyU7n99HPExPDBSOVzEIsECfn/+RopRl/4gTkPIGaCokm3POSJD6skAgNGAEd8KokODACQdEpanpLnAErI4PxQEYbivZd/GNoA9nwDFiZV3lDnf4D4qrrKEoy0vkUWX7/QvZLhhDJ/irPZvjZaxtAzvfvmcdeGNUBBY1+lwX5zbHcUCZsB/WSN1AAPa6kln/8dkwHPDuVOP+qky1ed4NC+u9rR/GDMuUbqTU3qiS+r3DiXKE0bzA9KVr+aInmTWgrOChJYY1UJpXA+2xl7HDDkc3piydfQeasY1wp4LlueoSGcoKHb7BmrihGjAGdYWrE5Sy/8q633aPEEY9YTFFIro6OffTwdepsX9afnPbKPd1VXayYl5xPzT3iQ+1Lrt+RbRL89LXJXd7oIxNjVl7fEsX0sM+39/AR3d4mD96ccmILNM8L91IbdSJMPFUG8UdkOR0qRz/etfEsJvflbaL+9BdU4vV8jZj0Dcf6ydxqCQ49R2LCHM/eRgj4vgSz/dd/9AdONvkQRS05GFvNlWQ3gX9drkpYLojV903aNbJamGiFp7UXB5YIuqre1oPMxDiTaevpkkTb1zlCWiMpgrJkBzYS90U3u0iWC/9akVKkr9eXiB09vdvC4nPdPtIb9tgT+TCsPq7hqyV7p4Hpbx+5BhfsrH8yB8rIqVdS+JgOeLpWnYceqQK/jAE92ciGQn0UZdtaifCBKsZqU+fGCv6AI+PdupW48B19Asjwg5DoseVIVSifu9FqWXqYthyJSLQ73etwg03wMmpaEL9L/P7qyT7O+EjgmAgJUjJb/D08q9xzBzKCm25WAFDG8W4xkNVq6H1SMX2Y5isD8fzb2yPgsBzmDLupMhrcNbWSK+sOFoTWr0PC1r8lxuFJuXH6ZsO+BxVfEC+H2p2Zg6UCbFkn3dAszCFl8Wcq+OlRL2cTxMoH1vNpfekRCF2PdZ4iVpqnURf+L2JjLPXIoptYTtq7RPS9c1hHpyiOgY4FFTms9fTCLD6DnTAIR1XB5pz60GIgHC+B88/6CJy7yPF9hIu48kS2mpG5axmworlHKGc+/FQai2LArkreqYNsNxCQxeZZ18h5aIqa46JF0E5a6FHqSL5dKre/4Fzfp+W1jLzP0Lxkn1AdhwnYaBZUYqliz0xpcA/w/ytyyDorVwchrjvP/lEkFknxe1sTnhbJogPzirDoJW+pa+gjmFLzUVxsl/R1kB9STVvXE9tBTwtx1wDFKL8+jVhDvYy/Kv+yqStwTy/kFTv//uDf/RLCBziGxyW2cW8ZCpDcqrzyagduvl/WRYwsvIIbVQPCXLkHXvTEhgeRHB+oDr//bkAL5GEYvZWuGxa4dFBhYnAAj+iM60C7dP5GPa7lnbkm/RHQmaAAD4GKsOnPywK7OeA7taaB5h07BOiU3Xip8f0c+AybkExhdsn+0ylvdrFR5vluj+1p6G7TpVkKenv35dgWZqFC5oXszNq2S51viS7TIxghMVUVnV/mRlWbqWwLb4me7gOKWtqoT9aqzxl2wGFZPZYl1Ep7NScJY41eDwzOcPWWyyYvdDiqlGOzovJ4JgVa2OqXdL1OdMeuKgJSMYjSCbwRrfkbh+OgdVLIXMviq1RJeGOs7ZK/B1GKAe8R9FNXG1aV+OTGk2AqEBVHwcNF9ouolTPp2pMc808q0ENAO/2KK/w9T0hQmuVoFfIfZkV7DHm+A7KqP1tXuHBSdCF7kd6abvkYKUWXOejwN7L9VQ4UBJYIfjzu7P0dmLDZsdMoI1y2dUkgCA14FOB+76yKzafRBY5AvG6DFkzWQaQsp9Mm2z4Q7pc6ORLvk4NjU+QzIADe1r2cxqG7RIA5MFYxD3lngvcndGWR3Rlpo293b8j13kgd3TaU+wfb6LSnBdPgGz9iBPT79qgC23gz07SCfCqzR1IZU+5GFOd0K93IgS/YNvBKZm0WLa/KiKcMXVuxRuz/k2BZ3zzDfgwSv0frlAJaR9Z6uEry4rtyM96Sll+weamqk06+kmdUrjh/PQPXdMo4S7pR38/eXgTJLDLSfTOL3fye589DjZzIub+Ifgx2NWr8smvR/8gApXwLk0b+z95jdg6Xq5gYzHBfgd0W3MWbybGIk+EzpdO0tUEjIFc4dADRA/2Rd4et8d7DDwAJw+irh97NF2bnXa+wkc9M7OE76cVChuRmeAljqrI33JTAl/z6tT13tpnmgAjOa0GTQVyNrIgiQGyWjp4M5m/nlFCcxpz6mMDBHmZMllK52q36eUzR7lllSz6j2pqeDtEafnajRrYNAbSkxkzwauQ6ZZsBmmGt4c/nHLC1SpDfk2WMgRNp8HwVxbrn0JX3ER2nL/1vqBGT42UqJ0R69Fk0V5MMUXVPTTWCegO+vsQTmvita35FxyVqwmR9gdfpKTWKcN85WEAF7OSWaL4pFFARsx8HsCijTas/R8wS0dd53M/eOHd5vn5kKjXfg5RCo5DHof6LWws8JVwrFw5SEbGOuYhbNQWPbpSp0nVF6AIf9iVB30pti+uN9zzNSz5HN53S7DHTOnoo/Okzt3SP8icE6/nOCKuzwaQ/GxxNZDGD1TLH6yU/e4JjHO8hfWCXF2NcRqC9Qt3QeAZSG851wpLrUFgnMOT5MOgZRBf74js41wTGjo5nL16byWVaq9CuFJMhv0oeLWUWgxwiA3t/2RlATtOjt7xy4wWnQPl6aktfhiNnGoImwyWaR7DOXVfIu5PaRwMWsfmCDouUXtiw7QfvHclDjF2Eoy5uWh05V6/Zdz136O5U0A5C1RCR5EKdH1ZUg4zjYR4PvWT7d36CkM49ZVHM8uV9Wnm4HDBwx7aOfoNiegxBqQxp0QMIFL9f0VPbB1HIbxtUEWnfnwb3+9u+iAft5qx2othsVEr3rm0S4BbQh6HBMeZwz2urbobpDVo35xshnBvA+fV9MAHSv1GgacWVQqrNRjv8Bqt2En3Etfc9zT/mHHlXq/7kKtUsu9rCZuCZ4hm8vH5wNLB6h+UVA1awsWwLVlHC+QwDw+w9gKSBMCmeqE0DVqfgN7nCWIyx/wjjsCQtlEG4OiSdmdnyHEYpuNGn6MeW9/zqCSi4O8XUs+EfGut8Z3qngbeL4VBmanQYL83UNkPGtkOf/a8Ycb+DkueY8GY2QMVbymbFcVNdql5fSstY0Z3tsb3mDCcOKUvuw/YZikQUIVRfkUAJwObMPWQtDD9F1UFqVVVthrpeNFGhwPewtJJo+cHcAawehESM+tq6iz67FEeQVugsZAsm1BZckXmXsmUdVJiVUOaYdM922GA69EF2V328EA1GqqhDrkxlk6A/P2iO50fNGMzlocfDUIT+MJkV4fDZPAMfCySjJbui2fAtTzaBFi4EbQ1NTPfQH0ZZG9OSxTcsKDiGOzkNsJfiwyVh68TeYyZTMcfdSXT1UhKNdq6XHE6qNP4aSE5xhnhkimUUWeusxM/+AcDJBrlJwGaQ14C8o3NTA+jeudo42VfApGLeFpL508sVzI0SGWbD/NUSYLx0bAY4RiW42P1n4c23emxnYeA4dxG31SdF6aNBr3tdKzfmMrPm2vT8uaBGUG28OEXvUkIvomu1wNjXmun9HV9ZbY9BXxAPw6X8kJ+hiOtHUxp+P+XaECOpw51hHH3Us17ILrmwNWYrHbFxf0Z82Bjv/nfJnIjfPhrkuz7fOSR7AB1M905Iy0scrdQzMMOPwoAB1DZEPqKMjgrnT/tqCsIyFSlfzLT1n5EcdMRQf8ug08P8IdZUuk/5KbnmPR2Q5KYEL1Tj1Q+LABfun5bncgmI6Nti5iOGkQMbLfb6wUpap4/3/p4HXj6FYyMY99RtobIkqf0eyzxR6/ShxUR82rQP8DB/X47CuxBq0WVpX9cKvQSSpa8zatnpHjcBzWwPvL2ukYxlhAA7xMgMy1y+0jzgTeMxOhYILKgyzrH1QIDe5ZTdAJoUtltQ/5FZspuKYocMcp2LzvcjvDj8BW7/6azZ7XXcO5MXUjME2zpdnoOyJB7aB+Oyq4GPJOnXx9s1PlBSNCRwfavYiFMmwlNrf47BXNwVKqyuBjjc2Zc6ZEGh8UoaOjRW8q3QGNVXB7oA3ELpZLDS5fgEVXibytkrJzTWDetJci7gpM7PkYq+jHpE44IpslshyP0zLsRuTzDp5aJLC7eSeWfN+qEs6uzVr243MA0JH6FkZzhRLSNgPhitKySYf+pW/ff5eGE05KrfcT5F1KD/W2OAPHUZDiV0DcWqq0+Y+aZN65PORdHVkGO69BuwEoWmwuQEDYMgHD0F9qIpAWSfD0jMhnmoXPMre5XlbDO5xR5uC4fMbWmZ7OIVABx5r6BEybwgGgbbYSRp/nEd67igH6btkEPg4UHaikR49jCWkjVnaKPvNuxg7HTo4jqeByAaHskDVczfnoPTMj1CiuFIoC+NiMG2WXnFrRtx51piDIFOdNYPKjZHyQWhD9+G9ZtUpvcWLLCOJ7dPdKR6srvrEM3zUkccUmZmfz+boWq50p9/mIRe32S0RDNhZ/fS/AX2j+q4vZNW9sieppv8MMWterb9YPJhZJDOUHRtWFvMkj4rDbvy7fm4UdntYW7H/I4NHWBi1VcFasry7BTRLLf/l1F8GkdkwOiaOaHNNxdH13Kam4ak7UL5PZe/+TJI7TcukGUjAgidRvDwyFi29ghgy5I+/nKq38udTffc/PXmzbTS08WCPybhu6/ca9TRnMbqqrfghY+OzIwIaJVZrtuH1eZ/BShijn1dbUrECnPYesCYAFGX9YI36FZOq5JWerQhYdVf558lNirFTwVgEvCGgVwWdzh8PfWpUKKsLEUKwoS8s8a0kHXb7Yx2jFZHPD1nwHlIhNOmMslwODKgILjLM6rCeOTzk/9EJliv656CqjZlDK6K17v/Ejl0gwwMsZO9FF/8UlbVSrYr7NWrjS/iCMknVS8Fd28m7a/YOEHn4Ty6gjQj+ES/OSWwpn+ZymohQrOlNcuAEdbGcnKwDpCyIUopEw2HW22b5Ktq4uEUr/LXl6bM1BFgomG6WkXMqUhrsewOsn4rqJvAjzvKfptm++akhadLtIj4eLDTvm3Wui/4jwxSko5bbUVlX/TCB/ORDlLv3Y/NI8OYc7UwEGJX6m6TXnRcKkpB2smNgvo7gdd2lb1O/RuruyiCQ+Fh8uzsmVwnhfgd1lBn6hM+/n7iKTn3UmhYfnII2QwBqRFt4o/u8bCcfEFPlqWCXucUqvUEdHvX/S/vUbSW1JpFF1VEAUKivh9wYuzer2lEbU2tRpW5cQZrS+t4k1kHFfs9ZGqKC5sTQCH+R65uyrIBnsYMoFjkwLRfrOBmgnY7Haa3BHmFI3EFg4EyBIwXqveb1vcsJcxHw+E34jDP1sO1QiU+/5ylMGl2Os7Il+w+eJ9Y9U7twX5ceQ7z4vXqJulbHU5cl50zxHjFea4V5h4qSwDJOOGPKYMVtRJEExFjQDYw/8fLReyVbOYL1pRJCq/Ce5R2JyCq/mqdHu5LimTx58Q1y0ERYlYWEX/4qtGbLD1AmGw5EWKle2/iQde4E91OCWlxT4Z+L3n8WYjooriO5WOTYWla8gHMuxj3MIIONeosouGacUMK8SuzExJ3jH6onb2t8A7CM8lZH4CtOk6I0C6t+U8lA2YAkn7t8ZFkM7ryVPOSSl9m9YEE6HpLCiul3+UHDorwbPYIPlv0s8aZmp8Uc3/71z2+PgNCtX6Uwx1x+xiyx5XQPy9w2NSwwnp/wHILjKWKWHjru7UDLJEoN8clN+rZ8vb9DYtgvrWY0Dz4l7bXRZxZrLAcQfkhH8c408IWO7MtZPcBIVUevyTb/alqmmf9xBrfIXaJ5n6rR6b4NIclCHUBgFEqowy1uro/ibtZoaGdjgYsE14k1BEimnJ1/kp/fGO1yh0ONqB1vu/3MuGdDz+vwplPxlmDtMrZkM2yCN7xyEQevP39OUC1L9VguAtk95qqlOrVXEwmtiz2VjVQuYvn5sJxcgrYT3Wo7nUlsDOe+2Z2/l2r71uw7SajHzZlo+rxqEqhCGjAMrNLVbvXluffylEtWPjx4gHMVVLTBDatw5khnDgdJ7wLkcAe42VMw2FA8gEL2ooVCTRDPjSG6R6MVJf3oemASfqJDszD0txY3P1H6aragrosx2RFIHoGZUWS80q0VA+g6QAm8oCF3vg9fVTKjPlahJUHakBqrAXSAfDO6Pe4OXcbnz4OWuyARxu5gCOwP9MmJDwwyt3fAWxw/LtPzN06o7P7HBPU8Ymxgt0ner7Gf3yzyDeHKEGwIggO08Hr78fbb152A7ChtzwPkH387DJXv/vR8nJz85hRICLgXXGqWR4+IK6M5/lqP8Bvt90SKAMfHzZjxF4HyuRcx0yVdO9W0BXC1PUW+FFKYz5Gf66pIn5DSQBYAwbNCIMX53t+wWpJbK60q5tokx1CQVeQh4pNdfaAdiEkZG08/2QicEquJgg7Px5Dd1Smu0wzElqN4qHnLvU0sdqRuk249wlACNqH8xMunC+/e2qIHel2J9Br5/PyA17zCLvTaZ9SGfXfqWA8KUON9yb3zoXJDhes09+dqG6VARLjRmMSr+sM52O4Ax4SjzXnX27COcA5b3c+t6MmZ1+H/zNDbj678qHtfmxXwlXpJ9sf2pOxeRpexulf7SsxSIIwZ5X0V0rO8us4uaYC3vMi/0B38Yi4FKH3XeMLAWtICWAAAARVhJRv8AAABFeGlmAABJSSoACAAAAAQADgECAJsAAAA+AAAAmIICABAAAADZAAAAGgEFAAEAAADpAAAAGwEFAAEAAADxAAAAAAAAAExvdWlzIEFybXN0cm9uZyBvbiBzdGFnZSBvbiBEYXkgMiwgRmluc2J1cnkgUGFyayBBc3RvcmlhLCBMb25kb24sIDE5NjIuIEFydGlzdCBCcmlhbiBGb3NrZXR0LiAoUGhvdG8gYnkgTmF0aW9uYWwgSmF6eiBBcmNoaXZlL0hlcml0YWdlIEltYWdlcy9HZXR0eSBJbWFnZXMpL0hlcml0YWdlIEltYWdlcywBAAABAAAALAEAAAEAAAAAWE1QILQFAABodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iPgoJPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KCQk8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIgICB4bWxuczpHZXR0eUltYWdlc0dJRlQ9Imh0dHA6Ly94bXAuZ2V0dHlpbWFnZXMuY29tL2dpZnQvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwbHVzPSJodHRwOi8vbnMudXNlcGx1cy5vcmcvbGRmL3htcC8xLjAvIiAgeG1sbnM6aXB0Y0V4dD0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcEV4dC8yMDA4LTAyLTI5LyIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgZGM6UmlnaHRzPSIvSGVyaXRhZ2UgSW1hZ2VzIiBwaG90b3Nob3A6Q3JlZGl0PSJHZXR0eSBJbWFnZXMiIEdldHR5SW1hZ2VzR0lGVDpBc3NldElEPSIxMTM3NTgzNjcwIiB4bXBSaWdodHM6V2ViU3RhdGVtZW50PSJodHRwczovL3d3dy5nZXR0eWltYWdlcy5jb20vZXVsYT91dG1fbWVkaXVtPW9yZ2FuaWMmYW1wO3V0bV9zb3VyY2U9Z29vZ2xlJmFtcDt1dG1fY2FtcGFpZ249aXB0Y3VybCIgPgo8ZGM6Y3JlYXRvcj48cmRmOlNlcT48cmRmOmxpPkhlcml0YWdlIEltYWdlczwvcmRmOmxpPjwvcmRmOlNlcT48L2RjOmNyZWF0b3I+PGRjOmRlc2NyaXB0aW9uPjxyZGY6QWx0PjxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+TG91aXMgQXJtc3Ryb25nIG9uIHN0YWdlIG9uIERheSAyLCBGaW5zYnVyeSBQYXJrIEFzdG9yaWEsIExvbmRvbiwgMTk2Mi4gQXJ0aXN0IEJyaWFuIEZvc2tldHQuIChQaG90byBieSBOYXRpb25hbCBKYXp6IEFyY2hpdmUvSGVyaXRhZ2UgSW1hZ2VzL0dldHR5IEltYWdlcyk8L3JkZjpsaT48L3JkZjpBbHQ+PC9kYzpkZXNjcmlwdGlvbj4KPHBsdXM6TGljZW5zb3I+PHJkZjpTZXE+PHJkZjpsaSByZGY6cGFyc2VUeXBlPSdSZXNvdXJjZSc+PHBsdXM6TGljZW5zb3JVUkw+aHR0cHM6Ly93d3cuZ2V0dHlpbWFnZXMuY29tL2RldGFpbC8xMTM3NTgzNjcwP3V0bV9tZWRpdW09b3JnYW5pYyZhbXA7dXRtX3NvdXJjZT1nb29nbGUmYW1wO3V0bV9jYW1wYWlnbj1pcHRjdXJsPC9wbHVzOkxpY2Vuc29yVVJMPjwvcmRmOmxpPjwvcmRmOlNlcT48L3BsdXM6TGljZW5zb3I+CgkJPC9yZGY6RGVzY3JpcHRpb24+Cgk8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJ3Ij8+Cg==" alt="Louis Armstrong">
+                <h3>Louis Armstrong</h3>
+                <p>Dupla sertaneja com grandes sucessos como "Propaganda" e "Amo Noite e Dia".</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQyzEHwAMq-MlAeerEVSptD3RqH_HqbH5r42SU1DJd4HWNBKBvL2dyuYHSbsPEec_TOlh7oAomh1HFF1Z_ZedsM3_koSXPV7ExHCCi9tnBrvPXT_mkEyiMn56AncS6GSphYyJ0KB5ekWxI" alt="Frank Sinatra">
+                <h3>Frank Sinatra</h3>
+                <p>Rainha da Sofrência com hits como "Infiel" e "Todo Mundo Vai Sofrer".</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOab7Q2UcT4kuY7tWEqKgq8r0JxrSg9hnffq7L737y5yFNG91DxWYhv5WcjOFbsR6OGfKvDJuMi7t4cZQiedofdw" alt="John Coltrone">
+                <h3>John Coltrane</h3>
+                <p>Dupla feminina com sucessos como "10%" e "Nem Doeu".</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRs5SYWB29emsNI9DQZYhqXArVbHddSsgvKMmdmYcl6pdDEBK8wx3LKx67evK8gYnvvNAAIR8oUoIpRPZD5XSHL-A" alt="Al Jarreau">
+                <h3>Al Jarreau</h3>
+                <p>Cantor e compositor com hits como "Balada" e "Cem Mil".</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlVL5g8pa1SlMpT_KTDv6YLyLKGsIXPKf2v9UA7cEUyTvm054z7UG4XS9eg3PuyTi0quD87LHEkZG6It8V0oygUomCSABXCS87Dpannbzu_w" alt="Ray Charles">
+                <h3>Ray Charles</h3>
+                <p>Dupla com sucessos como "Bebi Minha Bicicleta" e "Notificação Preferida".</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKTix8S7lU6VIPa4eMgIC5Wo9twrvOoAfyy1GJawxkJjczW8bS03ZEnvCT88ZJWi3M8d0fg5dpBJbsqxxgtcLu9eeRVXeLXRmTisEH4mti" alt="Carmem McRae">
+                <h3>Carmem McRae</h3>
+                <p>Dupla com hits como "Cuida Bem Dela" e "Aquelas Coisas".</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRqfrjAk6G7QmyzeuLMvxt9gMefERCA7TmHaIjieL97rrZIksyCncLlyB0Bc6VbMLTlQQ4lg4ibG1I4-m9LMSwp1XvB6YbgTHL6GGI6SaGz3C5QUxNxLJ6x4njxtxx9VYXwUgdVar8vWqw" alt="Big Joe Turner">
+                <h3>Big Joe Turner</h3>
+                <p>Lendária dupla com clássicos como "Evidências" e "Fio de Cabelo".</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRFYcP_Qw0sIm5gZT0X3WtfxPfReYTv0wuVkb_gO25oaF8SVqjsALHGWaAEh2f3l1KIcAkcEEeL0OyHSVD45DIIVnAaBf1I53v1gUoRF69ebRVh47MO4V_RoLwxphgDkf7-FkqRPt37Lec" alt="Billie Holiday">
+                <h3>Billie Holiday</h3>
+                <p>Cantor com sucessos como "Meteoro" e "Escreve Aí".</p>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="shows">
+        <h2>Próximos Shows:</h2>
+        <div class="slider-container">
+            <button class="slider-arrow prev-arrow" aria-label="Slide anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="slider">
+            <div class="slide">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzbYviEHwexIxrVYPICenPHFPjxDpUpEHSr-iFqjEdRn6KPM0rciX_fs9Wk9g6ibDCDM01txVhwf3C5IZRSvFieg" alt="Show Miles Davis">
+                <h3>Tributo Miles Davis</h3>
+                <p>Show Memorial - 15/07/2026</p>
+                <span class="location">Nova York - NY</span>
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRFYcP_Qw0sIm5gZT0X3WtfxPfReYTv0wuVkb_gO25oaF8SVqjsALHGWaAEh2f3l1KIcAkcEEeL0OyHSVD45DIIVnAaBf1I53v1gUoRF69ebRVh47MO4V_RoLwxphgDkf7-FkqRPt37Lec" alt="Show Billie Holiday">
+                <h3>Tributo Billie Holiday</h3>
+                <p>Show Memorial - 30/10/2023</p>
+                <span class="location">Chicago - IL</span>
+            </div>
+            <div class="slide">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOab7Q2UcT4kuY7tWEqKgq8r0JxrSg9hnffq7L737y5yFNG91DxWYhv5WcjOFbsR6OGfKvDJuMi7t4cZQiedofdw" alt="Show John Coltrane">
+                <h3>Tributo John Coltrane</h3>
+                <p>Show Memorial - 05/08/2023</p>
+                <span class="location">Nova Orleans - LA</span>
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSCttCuEdNeLFL--mlcWTei71mPZuCiNxMs_jIR4YYnMYuXVrmZMOwiGJZnQWQCkojY1QKJaafujOjisBI" alt="Show Sarah Vaughan">
+                <h3>Tributo Sarah Vaughan</h3>
+                <p>Show Memorial - 12/11/2026</p>
+                <span class="location">Los Angeles - CA</span>
+                </div>
+            </div>
+            
+            <button class="slider-arrow next-arrow" aria-label="Próximo slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <audio id="audio-player"></audio>
+
+    <script src="JavaScript/jazz.js"></script>
+</body>
+</body>
+</html>

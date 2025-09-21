@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hertz - Rap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/rap.css">
+    <link rel="icon" href="img/icone.ico">
+</head>
+<body>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Categorias</a>
+                <ul>
+                    <li><a href="pop.html">Pop</a></li>
+                    <li><a href="#">Rap</a></li>
+                    <li><a href="rock.html">Rock</a></li>
+                    <li><a href="jazz.html">Jazz</a></li>
+                    <li><a href="flashback.html">Flashback</a></li>
+                    <li><a href="pagode.html">Pagode</a></li>
+                    <li><a href="mpb.html">Mpb</a></li>
+                    <li><a href="eletronic.html">Eletronic</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        </ul>
+    </nav>
+    <div class="music-player-container">
+        <div class="player-container">
+            <div class="main-player">
+                <h2 class="player-title">Seção de Rap:</h2>
+                
+                <div class="album-art">
+                    <img id="album-cover" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Capa do Álbum">
+                </div>
+                
+                <div class="current-song">Selecione um artista</div>
+                
+                <div class="player-controls">
+                    <div class="controls-row">
+                        <button class="player-btn" id="prev-btn" title="Anterior">⏮</button>
+                        <button class="player-btn" id="play-btn" title="Play">▶</button>
+                        <button class="player-btn" id="pause-btn" title="Pause">⏸</button>
+                        <button class="player-btn" id="next-btn" title="Próxima">⏭</button>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <progress id="progress" value="0" max="100"></progress>
+                        <div class="time-display">
+                            <span id="current-time">0:00</span>
+                            <span id="total-time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="playlist-section">
+                <h2>Playlist</h2>
+                <ul class="playlist">
+                    <!-- As músicas serão carregadas dinamicamente via JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+<main class="content">
+    <h1>Selecione um álbum.</h1>
+    <div class="genre-description">
+        <p>O rap é um dos gêneros musicais mais expressivos do Brasil, com raízes nas periferias urbanas e que evoluiu para diversas vertentes ao longo dos anos, unindo crítica social, identidade cultural e inovação sonora.</p>
+    </div>
+    
+    <!-- Container expandido para os artistas -->
+    <div class="full-width-container">
+        <div class="boxes-container">
+            <!-- Artistas Sertanejos -->
+            <div class="artist-box">
+                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTT6MPmToJiG0rPSmgdPHd0-SVTlP42desUDO1ruZ-HNVwnM4iskLLE2WW9DGaO4vW2QJDo0b4rNU7BqEI" alt="Eminem">
+                <h3>Eminem</h3>
+                <p>Eminem é um dos maiores nomes do rap mundial, conhecido por suas rimas afiadas, letras provocadoras e histórias pessoais intensas que marcaram gerações.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQROPPKGrC7YtFnOxQ7IDM3tntourwymOdS04vmGVzPeZw5pcQRCNIMnVfg60Y0gqNPOpQ8KMKA99dExkhuUAf3Rg" alt="Dalsin">
+                <h3>Dalsin</h3>
+                <p>Dalsin é uma das vozes mais impactantes do rap nacional, conhecido por suas letras afiadas, críticas sociais contundentes e uma lírica que reflete as dores e lutas da periferia com autenticidade e profundidade.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lQB0iusLvJQ8JgURDdz3q2AyXQp_Sk1nouwLto8naWDv9paunM2oOSIz4LknrYD5bUjoMGdtvAW_QcQDQUptvVjFI7mV25fa0RQqmQ" alt="Tupac Shakur">
+                <h3>Tupac Shakur</h3>
+                <p>Tupac Shakur é um ícone eterno do rap mundial, conhecido por suas letras poderosas, ativismo social e pela forma como expressava com intensidade as lutas, dores e esperanças da comunidade negra nos Estados Unidos. Sua arte transcende gerações e continua influenciando a cultura hip-hop até hoje.</p>
+
+            </div>
+            <div class="artist-box">
+                <img src="https://cdn.agenciamural.org.br/2023/11/29143949/racionais.jpeg" alt="Racionais M's">
+                <h3>Racionais MC"s</h3>
+                <p>Racionais MC's são reconhecidos por dar voz à população negra e periférica do Brasil, trazendo narrativas que muitas vezes são ignoradas pela grande mídia.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://i.redd.it/are-we-sure-the-guy-who-announced-the-fact-eminem-will-v0-cd85o1mswhpc1.jpg?width=768&format=pjpg&auto=webp&s=bd8edaa607a0d8e64eb41b5c65d0ef6c14bcde7d" alt="Dr. Dre">
+                <h3>Dr. Dre</h3>
+                <p>“Still D.R.E.” é um dos maiores clássicos do rap dos anos 90, lançada em 1999 como o primeiro single do álbum 2001 de Dr. Dre.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://mundodamusicamm.com.br/wp-content/uploads/2025/03/Snoop-Dogg.jpg" alt="Snoop Dogg">
+                <h3>Snoop Dogg</h3>
+                <p>“Drop It Like It’s Hot” é um dos maiores hits da carreira de Snoop Dogg, lançado em 2004 como o principal single do álbum R&G (Rhythm & Gangsta): The Masterpiece.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://s2-g1.glbimg.com/7nsdNbI94Z7BoeCztEd_iZ6hJP0=/540x304/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/E/g/ns4HSMTPajFG77RAybGg/ap24349313218034.jpg" alt="Jay-Z">
+                <h3>Jay-Z</h3>
+                <p>"Young Forever" é uma música de JAY-Z com Mr. Hudson, lançada em 2010. Ela fala sobre juventude eterna, combinando versos de rap com o refrão nostálgico da clássica "Forever Young", da banda Alphaville.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/09/220928175747-coolio-1995.jpg?w=1200&h=900&crop=1" alt="Coolio">
+                <h3>Coolio</h3>
+                <p>"Gangsta's Paradise" é uma música de Coolio lançada em 1995, que retrata a vida difícil nas periferias e os dilemas de quem vive no crime. É sombria, reflexiva e virou um clássico do rap dos anos 90.</p>
+            </div>
+        </div>
+    <!-- Seção de Shows Sertanejos -->
+    <section class="shows">
+        <h2>Próximos concertos de Rap:</h2>
+        <div class="slider-container">
+            <button class="slider-arrow prev-arrow" aria-label="Slide anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://www.portaltela.com/static/922c8e96-a453-4fc2-b853-1b066f2dfa26" alt="Eminem">
+                    <h3>Eminem</h3>
+                    <p>Turnê - 15/07/2026</p>
+                    <span class="location">São Paulo - SP</span>
+                </div>
+                <div class="slide">
+                    <img src="https://i.ytimg.com/vi/ZTCRwTfIZJU/maxresdefault.jpg" alt="Dalsin">
+                    <h3>Dalsin</h3>
+                    <p>Show - 30/10/2025</p>
+                    <span class="location">Curitiba - PR</span>
+                </div>
+                <div class="slide">
+                    <img src="https://wikifavelas.com.br/images/a/af/Racionais_MC%27s.jpg" alt="Show Racionais">
+                    <h3>Racionais MC's</h3>
+                    <p>Concerto Musical - 05/08/2025</p>
+                    <span class="location">Belo Horizonte - MG</span>
+                </div>
+                <div class="slide">
+                    <img src="https://pbs.twimg.com/profile_images/1230447105132695557/j4_Bluzo_400x400.jpg" alt="Show Gusttavo Lima">
+                    <h3>Trilha Sonora do Gueto</h3>
+                    <p> Show - 12/11/2025</p>
+                    <span class="location">São Paulo - SP</span>
+                </div>
+            </div>
+            
+            <button class="slider-arrow next-arrow" aria-label="Próximo slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <audio id="audio-player"></audio>
+
+    <script src="JavaScript/rap.js"></script>
+</body>
+</body>
+</html>

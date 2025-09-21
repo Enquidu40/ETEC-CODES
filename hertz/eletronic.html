@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hertz - Pop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/eletronic.css">
+    <link rel="icon" href="img/icone.ico">
+</head>
+<body>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Categorias</a>
+                <ul>
+                    <li><a href="pop.html">Pop</a></li>
+                    <li><a href="rap.html">Rap</a></li>
+                    <li><a href="rock.html">Rock</a></li>
+                    <li><a href="jazz.html">Jazz</a></li>
+                    <li><a href="flashback.html">Flashback</a></li>
+                    <li><a href="pagode.html">Pagode</a></li>
+                    <li><a href="mpb.html">Mpb</a></li>
+                    <li><a href="#">Eletronic</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        </ul>
+    </nav>
+    <div class="music-player-container">
+        <div class="player-container">
+            <div class="main-player">
+                <h2 class="player-title">Seção de Eletronic:</h2>
+                
+                <div class="album-art">
+                    <img id="album-cover" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Capa do Álbum">
+                </div>
+                
+                <div class="current-song">Selecione um artista</div>
+                
+                <div class="player-controls">
+                    <div class="controls-row">
+                        <button class="player-btn" id="prev-btn" title="Anterior">⏮</button>
+                        <button class="player-btn" id="play-btn" title="Play">▶</button>
+                        <button class="player-btn" id="pause-btn" title="Pause">⏸</button>
+                        <button class="player-btn" id="next-btn" title="Próxima">⏭</button>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <progress id="progress" value="0" max="100"></progress>
+                        <div class="time-display">
+                            <span id="current-time">0:00</span>
+                            <span id="total-time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="playlist-section">
+                <h2>Playlist</h2>
+                <ul class="playlist">
+                    <!-- As músicas serão carregadas dinamicamente via JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+<main class="content">
+    <h1>Selecione um álbum.</h1>
+    <div class="genre-description">
+        <p>A música eletrônica é um gênero que nasceu da experimentação sonora, usando batidas e sintetizadores para criar ritmos envolventes que dominam as pistas de dança ao redor do mundo.</p>
+    </div>
+        <div class="full-width-container">
+        <div class="boxes-container">
+            <div class="artist-box">
+            <img src="data:image/webp;base64,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" alt="David Guetta">
+            <h3>David Guetta</h3>
+            <p>DJ francês com hits globais como "Titanium" e "Hey Mama".</p>
+    </div>
+    <div class="artist-box">
+            <img src="data:image/webp;base64,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" alt="Bhaskar">
+            <h3>Bhaskar</h3>
+            <p>DJ brasileiro com faixas marcantes como "Fuego" e "Stone Heart".</p>
+    </div>
+    <div class="artist-box">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr_x_HBhjAyuIl1eVjS2z6wAqK7wX16hQ_5UKnBDpxQ8Q0Dy2Jib4OhYwNMOZSAc-dJYUaIvzZc5uqUEU65sZEdIo1LhoX6ZQ3Ada_0aSI8g" alt="Tiësto">
+            <h3>Tiësto</h3>
+            <p>Lenda da música eletrônica com sucessos como "The Business" e "Jackie Chan".</p>
+    </div>
+    <div class="artist-box">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmNiskEzehFGtq8GYRYwhcWZoa6FEpzhRqjrpvZax9YGKqkCQ-sZ85Q53PngSUJHdiIYSnxBTkqTrT9EbBcWgRypBwHlD9bswUXc4D20tJCg" alt="Marshmello">
+            <h3>Marshmello</h3>
+            <p>DJ mascarado com sucessos como "Alone" e "Happier".</p>
+    </div>
+    <div class="artist-box">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNXpPGPjDsknTPpP4-IcMrFdamrOqNJEjDockZoIlpfJnO2MFVtYuBNwkC_wqtJLvtNQM7q8Z4ElkZAw5lQxX6Ysbra1_JwUEFb-ek2A0GLA" alt="Martin Garrix">
+            <h3>Martin Garrix</h3>
+            <p>Prodígio holandês com hits como "Animals" e "Scared to Be Lonely".</p>
+    </div>
+    <div class="artist-box">
+            <img src="data:image/webp;base64,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" alt="Vintage Culture">
+            <h3>Vintage Culture</h3>
+            <p>DJ brasileiro conhecido por remixes e faixas como "Slow Down" e "It Is What It Is".</p>
+    </div>
+    <div class="artist-box">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1GMbUNIHCX9sPHQNKUphkPOg2Cze-WcB9BeaTNaXXx7VpWZVfEw91ZqXOi7qvevC7BaBtzmLdmoEphStskv6vFx12pLkx7Xs6jZaU0jd4Kg" alt="DJ Snake">
+            <h3>DJ Snake</h3>
+            <p>Produtor francês por trás de "Lean On", "Taki Taki" e outros hits explosivos.</p>
+    </div>
+    <div class="artist-box">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9a04S6ZCMVeyZZfwNx46YahVSXSbZj0CMAdHEzXSGYwMaybcYj4AP793b7Kw1TuIa6NoZUliM7s7PtvTBfd1sjoQarwz3eWyM6IAa32-ytg" alt="Alok">
+            <h3>Alok</h3>
+            <p>Ícone da música eletrônica brasileira com faixas como "Hear Me Now" e "Ocean".</p>
+        </div>
+        </div>
+
+    </main>
+
+    <section class="shows">
+        <h2>Próximos Shows: </h2>
+        <div class="slider-container">
+            <button class="slider-arrow prev-arrow" aria-label="Slide anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9ppG38FBYzw_jGWlUJHbsuHNRYddZdUQKKLYlmLXb95K9mLL1PVNMDWgCF22KF0ucoVOB3fgZF_W3tcei_Zm_-A" alt="DJ Alok">
+                    <h3>DJ Alok</h3>
+                    <p>Festival Eletrônico - 15/07/2023</p>
+                    <span class="location">São Paulo - SP</span>
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRA0GYFK0GWcT2mjqWzCQIsyS5pQdeyl9zca3Ps9ZRzCziDiabaxWJguukrUbIYagVCXg6wmft_oiCWGWXdc8z-g" alt="Vintage Culture">
+                <h3>Vintage Culture</h3>
+                <p>Turnê "Life Is a Festival" - 30/10/2023</p>
+                <span class="location">Curitiba - PR</span>
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROrCKOgb7xdmBMR6Igd4bg20qA0zcNKE860p7gToT3gCVWDNBPYMgtUvbzqmOu8pfB080L_mdSmgVYCb76yjpntg" alt="Bruno Martini">
+                <h3>Bruno Martini</h3>
+                <p>Show "Hear Me Now" - 05/08/2023</p>
+                <span class="location">Belo Horizonte - MG</span>
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhv74qGH0r9n-iMRmZb2o86HdRheoVNRi_q0P5fAjN41HV1ZS451zVGiweGYk61RdRvhPT-dBfUZWEBEw1R9x56w" alt="Cat Dealers">
+                <h3>Cat Dealers</h3>
+                <p>Festival "Sunset Beats" - 12/11/2023</p>
+                <span class="location">Goiânia - GO</span>
+            </div>
+
+            <button class="slider-arrow next-arrow" aria-label="Próximo slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <audio id="audio-player"></audio>
+
+    <script src="JavaScript/eletronics.js"></script>
+</body>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hertz - Pop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/pagode.css">
+    <link rel="icon" href="img/icone.ico">
+</head>
+<body>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Categorias</a>
+                <ul>
+                    <li><a href="pop.html">Pop</a></li>
+                    <li><a href="rap.html">Rap</a></li>
+                    <li><a href="rock.html">Rock</a></li>
+                    <li><a href="jazz.html">Jazz</a></li>
+                    <li><a href="flashback.html">Flashback</a></li>
+                    <li><a href="#">Pagode</a></li>
+                    <li><a href="mpb.html">Mpb</a></li>
+                    <li><a href="eletronic.html">Eletronic</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        </ul>
+    </nav>
+    <div class="music-player-container">
+        <div class="player-container">
+            <div class="main-player">
+                <h2 class="player-title">Seção de Pagode:</h2>
+                
+                <div class="album-art">
+                    <img id="album-cover" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Capa do Álbum">
+                </div>
+                
+                <div class="current-song">Selecione um artista</div>
+                
+                <div class="player-controls">
+                    <div class="controls-row">
+                        <button class="player-btn" id="prev-btn" title="Anterior">⏮</button>
+                        <button class="player-btn" id="play-btn" title="Play">▶</button>
+                        <button class="player-btn" id="pause-btn" title="Pause">⏸</button>
+                        <button class="player-btn" id="next-btn" title="Próxima">⏭</button>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <progress id="progress" value="0" max="100"></progress>
+                        <div class="time-display">
+                            <span id="current-time">0:00</span>
+                            <span id="total-time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="playlist-section">
+                <h2>Playlist</h2>
+                <ul class="playlist">
+                    <!-- As músicas serão carregadas dinamicamente via JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+<main class="content">
+    <h1>Selecione um álbum.</h1>
+    <div class="genre-description">
+        <p>No começo, o pagode era só uma celebração nas rodas de samba, um som simples que veio da raiz do samba de raiz. Com o tempo, foi ganhando força e novos estilos, até se tornar um dos gêneros mais populares do Brasil.</p>
+    </div>
+    
+    <!-- Container expandido para os artistas -->
+    <div class="full-width-container">
+        <div class="boxes-container">
+            <div class="artist-box">
+            <img src="data:image/webp;base64,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" alt="Grupo Revelação">
+            <h3>Grupo Revelação</h3>
+            <p>Banda de pagode carioca com sucessos como "Tá Escrito" e "Deixa Acontecer".</p>
+        </div>
+    <div class="artist-box">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1sTcgZpa5Mno1wtrndfXJMZkX4ILbRhkw_iNpg5AcC7WLUxwpzgyUjcH9jv-OW-3VEjznyzVsuG9JNDTME2PuVJR_qIRCyQENaWrGc9za" alt="Zeca Pagodinho">
+            <h3>Zeca Pagodinho</h3>
+            <p>Ícone do pagode, conhecido por músicas como "Deixa a Vida Me Levar" e "Vai Vadiar".</p>
+    </div>
+    <div class="artist-box">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK6cvPWZylUX_hUwSKvrYEMz07v-l6YZbCxv1ZAiJLnA9nQsxN8U8honta4_1q9kHgbhHRe8qouRwi5pIdayJhfWX64iUtYASJ7Y0WAFjU4w" alt="Pericles">
+            <h3>Pericles</h3>
+            <p>Cantor de pagode romântico com hits como "Final de Tarde" e "Deixa Acontecer".</p>
+    </div>
+    <div class="artist-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTRAYSaGvsz_xGym7YChXAE-aMTVKYzFMKZhMUFLQk5CMSRzut8O0ySFWsff9-vT3D0GSTvnhWqgteXeyEeRJLMsgzVMO-dbD-9NgT-9JHlg" alt="Ferrugem">
+            <h3>Ferrugem</h3>
+            <p>Sucesso atual do pagode, conhecido por "Pirata e Tesouro" e "Sinto Sua Falta".</p>
+    </div>
+    <div class="artist-box">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-Egtx1-5LAO0fASc3S3C_HDrkud4iZJNIq85OpPUjS30In6mIpdO0gjWAKSb7YAkUE9BhYnnFh1h9uZhr59FGnwZGnQUZvdXhGBnfH393TQ" alt="Alexandre Pires">
+            <h3>Alexandre Pires</h3>
+            <p>Cantor e compositor com hits como "Você Me Vira a Cabeça" e "Valeu".</p>
+    </div>
+    <div class="artist-box">
+            <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3623552:1740513755/Mumuzinho.jpg?f=default&$p$f=6ea8fd2" alt="Mumuzinho">
+            <h3>Mumuzinho</h3>
+            <p>Revelação do pagode, famoso por músicas como "Fulminante" e "Sinal Disfarçado".</p>
+    </div>
+    <div class="artist-box">
+            <img src="https://www.macae.rj.gov.br/midia/noticias/57953/1738974017.jpg" alt="Xande de Pilares">
+            <h3>Xande de Pilares</h3>
+            <p>Cantor e compositor conhecido por "Tá Escrito" e "Deixa Acontecer".</p>
+    </div>
+    <div class="artist-box">
+            <img src="https://conteudo.imguol.com.br/c/entretenimento/88/2020/04/12/o-cantor-thiaguinho-1586729541842_v2_4x3.jpg" alt="Thiaguinho">
+            <h3>Thiaguinho</h3>
+            <p>Ex-vocalista do Exaltasamba com sucessos como "Caraca, Muleke!" e "Se Você Amanhã Não Me Quiser".</p>
+    </div>
+        </div>
+
+    </main>
+
+    <section class="shows">
+        <h2>Próximos Shows:</h2>
+        <div class="slider-container">
+            <button class="slider-arrow prev-arrow" aria-label="Slide anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="slider">
+                <div class="slide">
+                <img src="https://s2-g1.glbimg.com/ytapq39-X7NzZF-Zww0ORzOqsAU=/0x0:930x710/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/a/q/cjwz9SSrGj1vNewWkHoA/racanegra.jpg" alt="Show Raça Negra">
+                <h3>Raça Negra</h3>
+                <p>Turnê "Coração Radiante" - 15/07/2023</p>
+                <span class="location">São Paulo - SP</span>
+            </div>
+            <div class="slide">
+                <img src="https://akamai.sscdn.co/uploadfile/letras/fotos/d/a/e/b/daebc66a1ec9930b2e9ce66a52f7baf8.jpg" alt="Show Sorriso Maroto">
+                <h3>Sorriso Maroto</h3>
+                <p>Tributo Especial - 30/10/2023</p>
+                <span class="location">Rio de Janeiro - RJ</span>
+            </div>
+            <div class="slide">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Exaltasamba_2010.jpg" alt="Show Exaltasamba">
+                <h3>Exaltasamba</h3>
+                <p>Turnê "Essência" - 05/08/2023</p>
+                <span class="location">Belo Horizonte - MG</span>
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKGmLqPg8d64NV4ghnnJO2puxPajs4ocpgFCrkUFM4kN4Sc_dcMkdAuBWNPcoK0VtlXAvAWrog4kAeOqaBc3j42CsL5Q3pw8Ue11oFSWxy" alt="Show Toninho Gavião">
+                <h3>Seu Jorge</h3>
+                <p>Festival "Pagode Raiz" - 12/11/2023</p>
+                <span class="location">Salvador - BA</span>
+            </div>
+
+            </div>
+            
+            <button class="slider-arrow next-arrow" aria-label="Próximo slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <audio id="audio-player"></audio>
+
+    <script src="JavaScript/pagode.js"></script>
+</body>
+</body>
+</html>

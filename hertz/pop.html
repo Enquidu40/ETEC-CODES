@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hertz - Pop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/pop.css">
+    <link rel="icon" href="img/icone.ico">
+</head>
+<body>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Categorias</a>
+                <ul>
+                    <li><a href="#">Pop</a></li>
+                    <li><a href="rap.html">Rap</a></li>
+                    <li><a href="rock.html">Rock</a></li>
+                    <li><a href="jazz.html">Jazz</a></li>
+                    <li><a href="flashback.html">Flashback</a></li>
+                    <li><a href="pagode.html">Pagode</a></li>
+                    <li><a href="mpb.html">Mpb</a></li>
+                    <li><a href="eletronic.html">Eletronic</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        </ul>
+    </nav>
+    <div class="music-player-container">
+        <div class="player-container">
+            <div class="main-player">
+                <h2 class="player-title">Seção de Pop:</h2>
+                
+                <div class="album-art">
+                    <img id="album-cover" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Capa do Álbum">
+                </div>
+                
+                <div class="current-song">Selecione um artista</div>
+                
+                <div class="player-controls">
+                    <div class="controls-row">
+                        <button class="player-btn" id="prev-btn" title="Anterior">⏮</button>
+                        <button class="player-btn" id="play-btn" title="Play">▶</button>
+                        <button class="player-btn" id="pause-btn" title="Pause">⏸</button>
+                        <button class="player-btn" id="next-btn" title="Próxima">⏭</button>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <progress id="progress" value="0" max="100"></progress>
+                        <div class="time-display">
+                            <span id="current-time">0:00</span>
+                            <span id="total-time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="playlist-section">
+                <h2>Playlist</h2>
+                <ul class="playlist">
+                    <!-- As músicas serão carregadas dinamicamente via JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+<main class="content">
+    <h1>Selecione um álbum.</h1>
+    <div class="genre-description">
+        <p>O pop é um dos gêneros musicais mais populares do mundo, com raízes na música popular e que evoluiu para diferentes vertentes ao longo dos anos.</p>
+    </div>
+    
+    <!-- Container expandido para os artistas -->
+    <div class="full-width-container">
+        <div class="boxes-container">
+            <div class="artist-box">
+                <img src="https://s2-gshow.glbimg.com/Q7WqLVGP9-OEqglkOXsY2UzxaY8=/0x0:560x825/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2022/g/F/5jSmpBSKSsUq8fUBs9hQ/michael-jackson-6-.png" alt="Michael Jackson">
+                <h3>Michael Jackson</h3>
+                <p>Michael Jackson foi um cantor e dançarino americano, conhecido como o "Rei do Pop". Revolucionou a música com hits como Thriller e Billie Jean. Morreu em 2009, mas seu legado permanece.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://billboard-com-br.s3.amazonaws.com/wp-content/uploads/2025/06/25091129/bbno.jpg" alt="bbno$">
+                <h3>bbno$</h3>
+                <p>icou conhecido por seu estilo irreverente, letras humoradas e colaborações com artistas como Yung Gravy. Seu hit mais famoso é “Lalala”, lançado em 2019 com o produtor Y2K.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2024/10/03133219/63cad86cb183568085a4e5f0be86aa187cc511e4.jpeg" alt="Bruno Mars">
+                <h3>Bruno Mars</h3>
+                <p>Ficou famoso por hits como "Just the Way You Are", "Uptown Funk" e "24K Magic". É premiado com vários Grammys e reconhecido por suas performances carismáticas.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://f.i.uol.com.br/fotografia/2021/11/14/163691693961915ecb5ec8e_1636916939_3x2_md.jpg" alt="Drake">
+                <h3>Drake</h3>
+                <p>Ganhou fama com a série Degrassi antes de estourar na música com hits como "Hotline Bling", "God's Plan" e "One Dance". É conhecido por misturar rap e R&B e por bater recordes nas paradas mundiais.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://www.apple.com/newsroom/images/product/music/standard/Apple-Music-Live-Ed-Sheeran-with-guitar_big.jpg.slideshow-xlarge_2x.jpg" alt="Ed Sheeran">
+                <h3>Ed Sheeran</h3>
+                <p>Ficou mundialmente conhecido com músicas como "Thinking Out Loud", "Shape of You" e "Perfect". Suas letras sinceras e estilo acústico o tornaram um dos artistas mais populares da última década.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://forbes.com.br/wp-content/uploads/2024/05/mulher-madonna.jpg" alt="Madonna">
+                <h3>Madonna</h3>
+                <p>Revolucionou a música e a cultura pop com sua imagem ousada, videoclipes icônicos e sucessos como "Like a Virgin", "Vogue" e "Hung Up". Com décadas de carreira, é uma das artistas mais influentes e bem-sucedidas da história.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2024/12/04133642/sandy-1723463239-620x620.jpg" alt="Sandy">
+                <h3>Sandy</h3>
+                <p>Sandy é uma cantora, compositora e atriz brasileira, que ficou famosa ainda criança como parte da dupla Sandy & Junior, ao lado do irmão. Após o fim da dupla, seguiu carreira solo com grande sucesso na música pop e MPB. É conhecida por sua voz suave, talento versátil e carreira sólida no cenário musical brasileiro.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://akamai.sscdn.co/tb/letras-blog/wp-content/uploads/2021/11/0322e21-whitney-houston-1024x683.jpg" alt="Whitney Houston">
+                <h3>Whitney Houston</h3>
+                <p>Ficou famosa por sucessos como "I Will Always Love You", "Greatest Love of All" e "I Wanna Dance with Somebody". Ganhou inúmeros prêmios e marcou gerações com seu talento vocal único. Faleceu em 2012, mas seu legado permanece vivo.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Seção de Shows Sertanejos -->
+    <section class="shows">
+        <h2>Próximos Shows</h2>
+        <div class="slider-container">
+            <button class="slider-arrow prev-arrow" aria-label="Slide anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCB2GWtcZY1jmdLuYohp6_wa0o6CarW7nnzz8kx1Hppxq5pm9DzRYpaH15kpxdneaRUKLRu3neDBLiDvaiXNf1-Q" alt="Show Dua Lipa">
+                    <h3>Dua Lipa</h3>
+                    <p>Show "Future Nostalgia" - 15/09/2025</p>
+                    <span class="location">São Paulo - SP</span>
+                </div>
+                <div class="slide">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpTW-o-tTqVW-QPDR5qjGF6gMff3IzbDee8PtLlogc578ROMXhuS7awWSW_eP45Qe55sXWR07ByqOQAzggTgydkWBGJPLSydTaPqbkiFII" alt="Show Alejandro">
+                    <h3>Rauw Alejandro</h3>
+                    <p>Show "Vice Versa" - 10/10/2025</p>
+                    <span class="location">Rio de Janeiro - RJ</span>
+                </div>
+                <div class="slide">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFu1ZPVowFyZrFRUtxK2oGlTErc-elfZhZFC4voRryitTPKcH3GfsmF05zMp-Vl7nDnskZPQ2Jg4lXkVpmrof_2A" alt="bbno$">
+                    <h3>bbno$</h3>
+                    <p>Show "Baby Gravy" - 05/11/2025</p>
+                    <span class="location">Belo Horizonte - MG</span>
+                </div>
+                <div class="slide">
+                    <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSaqdvT2So31oKaoXGUG4u4dsoSfad1b1wDX1ad8QwDFy384VetTTmKoeLWCfxSpwO9-Ns2OP3_9jaNtfc" alt="Show Shakira">
+                    <h3>Shakira</h3>
+                    <p>Show "El Dorado World Tour" - 20/12/2025</p>
+                    <span class="location">Curitiba - PR</span>
+                </div>
+            </div>
+            
+            <button class="slider-arrow next-arrow" aria-label="Próximo slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <audio id="audio-player"></audio>
+
+    <script src="JavaScript/pop.js"></script>
+</body>
+</body>
+</html>

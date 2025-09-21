@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hertz - Pop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/mpb.css">
+    <link rel="icon" href="img/icone.ico">
+</head>
+<body>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Categorias</a>
+                <ul>
+                    <li><a href="pop.html">Pop</a></li>
+                    <li><a href="rap.html">Rap</a></li>
+                    <li><a href="rock.html">Rock</a></li>
+                    <li><a href="jazz.html">Jazz</a></li>
+                    <li><a href="flashback.html">Flashback</a></li>
+                    <li><a href="pagode.html">Pagode</a></li>
+                    <li><a href="#">Mpb</a></li>
+                    <li><a href="eletronic.html">Eletronic</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        </ul>
+    </nav>
+    <div class="music-player-container">
+        <div class="player-container">
+            <div class="main-player">
+                <h2 class="player-title">Seção de Mpb:</h2>
+                
+                <div class="album-art">
+                    <img id="album-cover" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Capa do Álbum">
+                </div>
+                
+                <div class="current-song">Selecione um artista</div>
+                
+                <div class="player-controls">
+                    <div class="controls-row">
+                        <button class="player-btn" id="prev-btn" title="Anterior">⏮</button>
+                        <button class="player-btn" id="play-btn" title="Play">▶</button>
+                        <button class="player-btn" id="pause-btn" title="Pause">⏸</button>
+                        <button class="player-btn" id="next-btn" title="Próxima">⏭</button>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <progress id="progress" value="0" max="100"></progress>
+                        <div class="time-display">
+                            <span id="current-time">0:00</span>
+                            <span id="total-time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="playlist-section">
+                <h2>Playlist</h2>
+                <ul class="playlist">
+                    <!-- As músicas serão carregadas dinamicamente via JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+<main class="content">
+    <h1>Selecione um álbum.</h1>
+    <div class="genre-description">
+        <p>A MPB é um dos gêneros musicais mais importantes do Brasil, reunindo influências da música regional, do samba e da bossa nova, e sempre trazendo letras que falam da cultura, da vida e das emoções do povo brasileiro.</p>
+    </div>
+    
+    <!-- Container expandido para os artistas -->
+    <div class="full-width-container">
+        <div class="boxes-container">
+            <div class="artist-box">
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeWsRNWC97n8D_9k6A-S3WCjNk8lpk3hlCkkh3zfM3GYCs1dNGxsM47CfjoPCa5mWcnz9nK2wyhyvsJMubLTfux8iXFSiaP8yJVZVy0gd5cg" alt="Chico Buarque">
+    <h3>Chico Buarque</h3>
+    <p>Ícone da MPB com clássicos como "Construção" e "Apesar de Você".</p>
+</div>
+<div class="artist-box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8J9eOeVvMFu-1XCFeIO9aPZuEdKZLsQyQXO073PHl6OO-BqHUW4TE3swv5_KetDoI4fnoIsr-gHRmtTJ6qSZlixHlq70kfPuv8gvMJ0nf" alt="Rita Lee">
+    <h3>Rita Lee</h3>
+    <p>Rainha do rock nacional com sucessos como "Mania de Você" e "Lança Perfume".</p>
+</div>
+<div class="artist-box">
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkSvXKTClLxgSAfqIZxL4S7xsT9V-8hi0LeMwV3I3W_-6cj0iVRONT6UE9pmzgHyUScfyIopekcdgRIfG2ET1Z7VCc5SAohT7lWhVnNoU8" alt="Zé Ramalho">
+    <h3>Zé Ramalho</h3>
+    <p>Compositor místico e poético, autor de "Avôhai" e "Chão de Giz".</p>
+</div>
+<div class="artist-box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTprLKbOodcSIWwTl1bocJqbsaT8WLVnBnD8D27mObvHmcsbTKHaAciFu7KzJdtIVDm-iHApBhQ84_CfDLIXMzynZoV3WSeLaJrBn4uaWSv" alt="Gal Costa">
+    <h3>Gal Costa</h3>
+    <p>Voz marcante da Tropicália com músicas como "Baby" e "Meu Nome é Gal".</p>
+</div>
+<div class="artist-box">
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCRAI0vFsf4BwkKxahwj62TSNSMyV8WEiByvIXDggFRWA6LzeUZAJBDmGvFHy0QWfwKwq4jAaAJiHYMNaooolR2DSfBnFYzgNkuIVA3NNHyQ" alt="Jorge Ben Jor">
+    <h3>Jorge Ben Jor</h3>
+    <p>Mestre do samba rock com hits como "Mas Que Nada" e "Chove Chuva".</p>
+</div>
+<div class="artist-box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrZlJtH8pnWgg4Mm48iNLZAEYJhnrgfVuvSw&s" alt="Elis & Tom">
+    <h3>Elis & Tom</h3>
+    <p>Parceria lendária de Elis Regina e Tom Jobim em músicas como "Águas de Março".</p>
+</div>
+<div class="artist-box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQkJKysrqyCJ_jOqIFfoi11oeP5FT3YgF4qw&s" alt="Maria Bethânia">
+    <h3>Maria Bethânia</h3>
+    <p>Interprete intensa com obras como "Negue" e "O Canto de Dona Sinhá".</p>
+</div>
+<div class="artist-box">
+    <img src="https://i.discogs.com/0dMzDGpdQ2VWE_bTu-b8f0Vma2aE9D3MxHMfnGPGvWw/rs:fit/g:sm/q:90/h:586/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjE1/ODQ5LTE1MTk0Nzk0/MDEtNTM1MS5qcGVn.jpeg" alt="Djavan">
+    <h3>Djavan</h3>
+    <p>Estilo inconfundível com músicas como "Oceano" e "Sina".</p>
+</div>
+
+        </div>
+    </main>
+
+    <section class="shows">
+        <h2>Próximos Shows:</h2>
+        <div class="slider-container">
+            <button class="slider-arrow prev-arrow" aria-label="Slide anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="slider">
+                <div class="slide">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNW90Fy8GRNgjeYg7JM92gzX7pKBYUm53t3PmcoAEZJAFNsH1X47tNYkT9D356f1ouxxQf8GFmH4-U-gi3ymqxKA" alt="Show Chico Buarque">
+                <h3>Chico Buarque</h3>
+                <p>Turnê "Caravanas" - 15/07/2023</p>
+                <span class="location">Rio de Janeiro - RJ</span>
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLc3JMpWDazDs_C1jlZgx80QQsDg6r-kt9hCFbi_NtnhvLSlp8W-7SJDCcty9Q0Y1HnjBpNwRv7ZW1sU4qAp79pA" alt="Show Maria Bethânia">
+                <h3>Maria Bethânia</h3>
+                <p>Tributo Especial - 30/10/2023</p>
+                <span class="location">Salvador - BA</span>
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfkCejzrALrzYn4Z68L4-RkT5B9ixJNy0FS8jsFswO4-4d2-mXdKneUzPaQ_P_D2lPegO1gtuUazuXBamP3bebPA" alt="Show Caetano Veloso">
+                <h3>Caetano Veloso</h3>
+                <p>Turnê "Ofertório" - 05/08/2023</p>
+                <span class="location">São Paulo - SP</span>
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4dXILzCbE3E3H3u7LL2W-dxNNvoa1QCuu2NFoXQBdxQnhYzIH8Shj4EHF27JDDVW5oGt9uTBp25IjNu239S8Dr89Q7cxprHcXeKxzemSG" alt="Show Gilberto Gil">
+                <h3>Gilberto Gil</h3>
+                <p>Festival "MPB Raiz" - 12/11/2023</p>
+                <span class="location">Belo Horizonte - MG</span>
+            </div>
+
+            </div>
+            <button class="slider-arrow next-arrow" aria-label="Próximo slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <audio id="audio-player"></audio>
+
+    <script src="JavaScript/mpb.js"></script>
+</body>
+</body>
+</html>

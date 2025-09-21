@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hertz - Flashback</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/flashback.css">
+    <link rel="icon" href="img/icone.ico">
+</head>
+<body>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Categorias</a>
+                <ul>
+                    <li><a href="pop.html">Pop</a></li>
+                    <li><a href="rap.html">Rap</a></li>
+                    <li><a href="rock.html">Rock</a></li>
+                    <li><a href="jazz.html">Jazz</a></li>
+                    <li><a href="#">Flashback</a></li>
+                    <li><a href="pagode.html">Pagode</a></li>
+                    <li><a href="mpb.html">Mpb</a></li>
+                    <li><a href="eletronic.html">Eletronic</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        </ul>
+    </nav>
+    <div class="music-player-container">
+        <div class="player-container">
+            <div class="main-player">
+                <h2 class="player-title">Seção de Flashback:</h2>
+                
+                <div class="album-art">
+                    <img id="album-cover" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Capa do Álbum">
+                </div>
+                
+                <div class="current-song">Selecione um artista</div>
+                
+                <div class="player-controls">
+                    <div class="controls-row">
+                        <button class="player-btn" id="prev-btn" title="Anterior">⏮</button>
+                        <button class="player-btn" id="play-btn" title="Play">▶</button>
+                        <button class="player-btn" id="pause-btn" title="Pause">⏸</button>
+                        <button class="player-btn" id="next-btn" title="Próxima">⏭</button>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <progress id="progress" value="0" max="100"></progress>
+                        <div class="time-display">
+                            <span id="current-time">0:00</span>
+                            <span id="total-time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="playlist-section">
+                <h2>Playlist</h2>
+                <ul class="playlist">
+                    <!-- As músicas serão carregadas dinamicamente via JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+<main class="content">
+    <h1> Selecione um álbum.</h1>
+    <div class="genre-description">
+        <p>O flashback é um estilo musical que revive os sucessos do passado, trazendo de volta as canções que marcaram gerações e fizeram história nas pistas de dança.</p>
+    </div>
+    
+    <!-- Container expandido para os artistas -->
+    <div class="full-width-container">
+        <div class="boxes-container">
+            <div class="artist-box">
+                <img src="https://i.ytimg.com/vi/41GsS3jldOI/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGGUgZShlMA8=&rs=AOn4CLCLTveQecEXQdxN7QlQoAWoYK--DA" alt="Marvin Berry">
+                <h3>Marvin Berry</h3>
+                <p>Conhecido pelo clássico "Earth Angel", imortalizado no filme *De Volta Para o Futuro*.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz-joLCgTLZnN_HtEJXlCViZaFhLS8WM2ZDSjfqSkqKWVAT5aczmfzkqy-14tBJVDU0U84T5UvIL2EJiznYpVoYQ" alt="Toto">
+                <h3>Toto</h3>
+                <p>Banda americana de rock formada nos anos 70, famosa por sua mistura de soft rock, pop e funk.</p>
+            </div>
+                <div class="artist-box">
+                <img src="https://yt3.googleusercontent.com/jStPoBXg1kQW67lnvUql1ae3Hm_kxpiV2Zpx5Y-oIbWlOCQfgknZD4v00ouOeugacuL7bMHmjw=s900-c-k-c0x00ffffff-no-rj" alt="Boston">
+                <h3>Boston</h3>
+                <p>Banda americana de rock melódico com estilo característico dos anos 70 e 80.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Bryan_Adams_Hamburg_MG_0631_flickr.jpg" alt="Bryan Adams">
+                <h3>Bryan Adams</h3>
+                <p>Ícone do rock romântico com hits como "Heaven" e "Summer of '69".</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://89goiania.com.br/wp-content/uploads/2025/04/Europe-em-2022-Credito-ReproducaoFacebook.webp" alt="Europe">
+                <h3>Europe</h3>
+                <p>Banda sueca famosa pelo hino "The Final Countdown".</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://www.headbangersnews.com.br/wp-content/uploads/2023/07/Petra-50-anos-Feed.jpg" alt="Petra">
+                <h3>Petra</h3>
+                <p>Banda pioneira do rock cristão dos anos 70 e 80, com forte influência progressiva.</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://cdn-images.dzcdn.net/images/cover/52b14c89d3e526d284d86da648521867/0x1900-000000-80-0-0.jpg" alt="Paul Young">
+                <h3>Paul Young</h3>
+                <p>Cantor britânico de soul pop com sucessos como "Everytime You Go Away".</p>
+            </div>
+            <div class="artist-box">
+                <img src="https://m.media-amazon.com/images/I/71c08GMxvVL._UF1000,1000_QL80_.jpg" alt="Air Supply">
+                <h3>Air Supply</h3>
+                <p>Dupla australiana conhecida por baladas românticas como "All Out of Love".</p>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="shows">
+        <h2>Próximos Shows:</h2>
+        <div class="slider-container">
+            <button class="slider-arrow prev-arrow" aria-label="Slide anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+        <div class="slider">
+            <div class="slide">
+            <img src="https://s2-quem.glbimg.com/WaeKbYsdOtz--drLyxg7ddvPiuo=/290x0:1029x739/fit-in/1400x950/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2024/H/C/qZoZpKTeaSqzN2mbgBZA/quem-42-.png" alt="Show Madonna">
+            <h3>Madonna</h3>
+            <p>Turnê "The Blond Ambition" - 15/07/2023</p>
+            <span class="location">Nova York - NY</span>
+        </div>
+        <div class="slide">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Michael_Jackson_1983_%28cropped%29.jpg/640px-Michael_Jackson_1983_%28cropped%29.jpg" alt="Show Michael Jackson">
+            <h3>Tributo Michael Jackson</h3>
+            <p>Show Memorial - 30/10/2023</p>
+            <span class="location">Los Angeles - CA</span>
+        </div>
+        <div class="slide">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQH-kOvVHQx1qts6jXE5PgpvQKqpgi3ui9FL4KC9sxJ3OD-F26kUy_TzwvuPC3hpPm7bidLNrExzItEf6XZMgZMMw" alt="Show Whitney Houston">
+            <h3>Tributo Whitney Houston</h3>
+            <p>Show Memorial - 05/08/2023</p>
+            <span class="location">Chicago - IL</span>
+        </div>
+        <div class="slide">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBU-F9UHZqOvg1LCQuXQ-l_JiTzHfXsIy5KKJukAWkhPEMlX1AAtkkP8n2at2oVbMghRmGor_MsgsazV6TknpbiA" alt="Show Prince">
+            <h3>Tributo Prince</h3>
+            <p>"Purple Rain" - 12/11/2023</p>
+            <span class="location">Minneapolis - MN</span>
+            </div>
+        </div>
+            
+            <button class="slider-arrow next-arrow" aria-label="Próximo slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <audio id="audio-player"></audio>
+
+    <script src="JavaScript/flashback.js"></script>
+</body>
+</body>
+</html>

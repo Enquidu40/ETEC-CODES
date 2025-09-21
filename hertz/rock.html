@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hertz - Pop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/rock.css">
+    <link rel="icon" href="img/icone.ico">
+</head>
+<body>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Categorias</a>
+                <ul>
+                    <li><a href="pop.html">Pop</a></li>
+                    <li><a href="rap.html">Rap</a></li>
+                    <li><a href="#">Rock</a></li>
+                    <li><a href="jazz.html">Jazz</a></li>
+                    <li><a href="flashback.html">Flashback</a></li>
+                    <li><a href="pagode.html">Pagode</a></li>
+                    <li><a href="mpb.html">Mpb</a></li>
+                    <li><a href="eletronic.html">Eletronic</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        </ul>
+    </nav>
+    <div class="music-player-container">
+        <div class="player-container">
+            <div class="main-player">
+                <h2 class="player-title">Seção de Rock:</h2>
+                
+                <div class="album-art">
+                    <img id="album-cover" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Capa do Álbum">
+                </div>
+                
+                <div class="current-song">Selecione um artista</div>
+                
+                <div class="player-controls">
+                    <div class="controls-row">
+                        <button class="player-btn" id="prev-btn" title="Anterior">⏮</button>
+                        <button class="player-btn" id="play-btn" title="Play">▶</button>
+                        <button class="player-btn" id="pause-btn" title="Pause">⏸</button>
+                        <button class="player-btn" id="next-btn" title="Próxima">⏭</button>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <progress id="progress" value="0" max="100"></progress>
+                        <div class="time-display">
+                            <span id="current-time">0:00</span>
+                            <span id="total-time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="playlist-section">
+                <h2>Playlist</h2>
+                <ul class="playlist">
+                    <!-- As músicas serão carregadas dinamicamente via JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+<main class="content">
+    <h1>Selecione um álbum.</h1>
+    <div class="genre-description">
+        <p>O rock é um dos gêneros musicais mais influentes do Brasil, com raízes nas revoluções culturais das décadas de 1960 e 1970, que evoluiu para diversas vertentes ao longo dos anos, combinando atitude contestadora, diversidade sonora e expressão artística.</p>
+    </div>
+    
+    <!-- Container expandido para os artistas -->
+    <div class="full-width-container">
+    <div class="boxes-container">
+        <div class="artist-box">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeRx-Ge-FLxacv6YylV2xJCNOWFEye9SB5qpXSrik-OlK46OJ7EcemgFAGpv0gcsXP1WqhfAGLDx7DcljHBjTIpQ" alt="Queen">
+            <h3>Queen</h3>
+            <p>Banda britânica de rock conhecida por sucessos como "Bohemian Rhapsody" e "We Will Rock You".</p>
+        </div>
+        <div class="artist-box">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs_k-4zG6tu72LYqPHAFps-UKBsTbqXw6v9DzRNTy-J2amUaTirSyZnF7i9VnN4L_seNQvjuTUKXryhobw1Kn3NQ" alt="Eagles">
+            <h3>Eagles</h3>
+            <p>Banda americana de rock conhecida por "Hotel California" e "Take It Easy".</p>
+        </div>
+        <div class="artist-box">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxlxCJ5D5ynm9eRPgPNGPHEDE-UaIMkr5nd_dq6Gs2-VEixgia1p3AMnelm1k4dA_bfoCSrAgY1g0SqwmVIr3A_g" alt="George Clinton">
+            <h3>George Clinton</h3>
+            <p>Lenda do funk rock e criador das bandas Parliament e Funkadelic.</p>
+        </div>
+        <div class="artist-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHM-BBylnX2fGRtkyb-vUT1XKdQ2HuLPUdI56rveuFMyja3iB5W-1P_H_q1UL_L1KY8A7QQtJFa12o5JZ0UAbchg" alt="Robert Plant">
+            <h3>Robert Plant</h3>
+            <p>Vocalista do Led Zeppelin, ícone do rock com músicas como "Stairway to Heaven".</p>
+        </div>
+        <div class="artist-box">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTj16ehkQdfmBftfFxYDYJY1mnrSpF3fTsHVbcf-M5t-yP90aStArVd5g2YIM87CaFvsI7J8C3AiIJZJlIzptBfwA" alt="Jack White">
+            <h3>Jack White</h3>
+            <p>Fundador do The White Stripes, conhecido por "Seven Nation Army".</p>
+        </div>
+        <div class="artist-box">
+            <img src="https://static.dw.com/image/66221717_804.jpg" alt="Mick Jagger">
+            <h3>Mick Jagger</h3>
+            <p>Vocalista dos Rolling Stones, com clássicos como "Paint It Black" e "Satisfaction".</p>
+        </div>
+        <div class="artist-box">
+            <img src="https://media.licdn.com/dms/image/v2/C4D12AQHZVPlWszlUeQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1520062240484?e=2147483647&v=beta&t=ZHbCBn5o5zyGrt3XTvJjOrGXPs-6UXFAfb1Vo-nwoS8" alt="Lou Reed">
+            <h3>Lou Reed</h3>
+            <p>Líder do The Velvet Underground e autor de "Walk on the Wild Side".</p>
+        </div>
+        <div class="artist-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlLZ-PRb4aRBH0E3oc7LuINJZHhv_9-mh7A&s" alt="David Bowie">
+            <h3>David Bowie</h3>
+            <p>Ícone do glam rock, conhecido por "Heroes", "Space Oddity" e "Let's Dance".</p>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <section class="shows">
+        <h2>Próximos Shows</h2>
+        <div class="slider-container">
+            <button class="slider-arrow prev-arrow" aria-label="Slide anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="slider">
+    <div class="slide">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Glasto2023_%2865_of_468%29_%28cropped%29.jpg" alt="Show Foo Fighters">
+            <h3>Foo Fighters</h3>
+            <p>Show "Rock In Rio" - 20/09/2025</p>
+            <span class="location">Rio de Janeiro - RJ</span>
+    </div>
+    <div class="slide">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFD3XEWELuPuTkEvVJPImz6oBUqEp1WyQQM-L2bLOkm5vF1e4qOaANMna0vzY-1r4FLuD0Kf7vOu5SdoD5Exlo9yaOU1RgX5aYdN-x0w" alt="Show The Killers">
+            <h3>The Killers</h3>
+            <p>Show "Imploding the Mirage Tour" - 05/10/2025</p>
+            <span class="location">São Paulo - SP</span>
+    </div>
+    <div class="slide">
+        <img src="https://i.ytimg.com/vi/aCyGvGEtOwc/maxresdefault.jpg" alt="Show Paramore">
+            <h3>Paramore</h3>
+            <p>Show "After Laughter Tour" - 15/11/2025</p>
+            <span class="location">Belo Horizonte - MG</span>
+    </div>
+    <div class="slide">
+        <img src="https://i.scdn.co/image/ab6761610000e5ebab47d8dae2b24f5afe7f9d38" alt="Show Imagine Dragons">
+        <h3>Imagine Dragons</h3>
+        <p>Show "Mercury World Tour" - 28/11/2025</p>
+        <span class="location">Curitiba - PR</span>
+    </div>
+    </div>
+            <button class="slider-arrow next-arrow" aria-label="Próximo slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <audio id="audio-player"></audio>
+
+    <script src="JavaScript/rock.js"></script>
+</body>
+</body>
+</html>
