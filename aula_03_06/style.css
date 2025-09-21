@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(255, 0, 106);
+}
+
+.pagina{
+    width: 1024px;
+    height: 800px;
+    background-color: rgb(0, 255, 21);
+    margin: 0 auto;
+}
+.menu{
+    width: 1024px;
+    height: 50px;
+    background-color: peru;
+}
+.slider{
+    width: 1024px;
+    height: 150px;
+    background-color: rgb(0, 225, 255);
+}
+.conteudo{
+    width: 1024px;
+    height: 500px;
+    background-color: red;
+}
+.box1{
+    width: 256px;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+    float: left;
+}
+.box2{
+    width: 256px;
+    height: 250px;
+    background-color: rgb(71, 0, 119);
+    float: left;
+}
+.box3{
+    width: 256px;
+    height: 250px;
+    background-color: rgb(77, 190, 49);
+    float: left;
+}
+.box4{
+    width: 256px;
+    height: 250px;
+    background-color: rgb(51, 2, 2);
+    float: left;
+}
+.box5{
+    width: 256px;
+    height: 250px;
+    background-color: rgb(216, 126, 126);
+    float: left;
+}
+.box6{
+    width: 256px;
+    height: 250px;
+    background-color: rgb(34, 15, 15);
+    float: left;
+}
+.box7{
+    width: 256px;
+    height: 250px;
+    background-color: rgb(170, 53, 53);
+    float: left;
+}
+.box8{
+    width: 256px;
+    height: 250px;
+    background-color: rgb(148, 107, 107);
+    float: left;
+}
+.rodape{
+    width: 1024px;
+    height: 50px;
+    background-color: gold;
+    margin-bottom: auto;
+}
