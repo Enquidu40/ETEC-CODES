@@ -1,0 +1,18 @@
+utilizar os seletores no css linkando os e completando o exercício do professor.
+
+seletores desafio:
+h1
+h2
+h3
+h4
+h5
+h6
+pre
+p
+a
+table
+ul
+li
+img
+hr
+

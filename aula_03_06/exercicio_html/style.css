@@ -1,0 +1,55 @@
+body{
+    background-color: #4B5320 ;
+}
+img{
+    border-radius: 100%;
+}
+
+.h-1{
+    color: darkred;
+    font-size: 36px;
+    text-align: center;
+}
+.h-2{
+    color: rgb(17, 106, 109);
+    font-style: italic;
+    text-decoration: underline;
+}
+.h-3{
+    color: blueviolet;
+    font-style: italic;
+}
+.hr{
+    color: #280137;
+    size: 5px;
+}
+.h-4{
+    color: rgb(17, 106, 109);
+    font-style: italic;
+    text-decoration: underline;
+}
+.h5{
+    color: rgb(17, 106, 109);
+    font-style: italic;
+    text-decoration: underline;
+}
+.h-6{
+    color: rgb(17, 106, 109);
+    font-style: italic;
+    text-decoration: underline;
+}
+table, th, td {
+    border: 3px solid #280137;
+    width: 50%; margin: auto;
+  }
+
+a{
+    color: aq#280137;
+}
+
+iframe{
+    width: 50%;
+    height: 1100px;
+    size: 100%;
+    border:1px solid #FFFAFA;
+}
