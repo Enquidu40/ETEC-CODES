@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AppName>WOW Slider</AppName>
+            <AppUrlS>WOWSlider.com</AppUrlS>
+            <AppVersion>9.0</AppVersion>
+            <AutoPlay>true</AutoPlay>
+            <AutoPlayVideo>false</AutoPlayVideo>
+            <Captions>true</Captions>
+            <CaptionsEffect>parallax</CaptionsEffect>
+            <Controls>true</Controls>
+            <FontSize>18</FontSize>
+            <FullScreen>false</FullScreen>
+            <GalleryName>CORINTHIANS</GalleryName>
+            <GallerySuffix>1</GallerySuffix>
+            <HtmlCharset>UTF-8</HtmlCharset>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect>glass_parallax</ImageEffect>
+            <ImageFillColor>#000000</ImageFillColor>
+            <ImageHeight>720</ImageHeight>
+            <ImageQuality>100</ImageQuality>
+            <ImageShrink2>false</ImageShrink2>
+            <ImageStretch>true</ImageStretch>
+            <ImageTemplate>C:/Program Files (x86)/WOW Slider/templates/backgnd/stream/</ImageTemplate>
+            <ImageTemplateName>Stream</ImageTemplateName>
+            <ImageWidth>1280</ImageWidth>
+            <Images>true</Images>
+            <JoomlaType>2.5</JoomlaType>
+            <OneLoop>false</OneLoop>
+            <OrderRandom>false</OrderRandom>
+            <PlayPause>true</PlayPause>
+            <Preloader>false</Preloader>
+            <PublishFileName>C:/Users/W1018122023/Desktop/Corinthians/wowslider.html</PublishFileName>
+            <PublishIndex>wowslider.html</PublishIndex>
+            <PublishPath>C:/Users/W1018122023/Desktop/Corinthians</PublishPath>
+            <PublishPreview>true</PublishPreview>
+            <PublishType>file</PublishType>
+            <RelativePath>false</RelativePath>
+            <ShowBullets>1</ShowBullets>
+            <ShowControls>false</ShowControls>
+            <ShowTooltips>1</ShowTooltips>
+            <SizeStyle>1</SizeStyle>
+            <SlideshowDelay>20</SlideshowDelay>
+            <SlideshowDuration>17</SlideshowDuration>
+            <SoundEnable>0</SoundEnable>
+            <SoundFileName></SoundFileName>
+            <StopOnHover>false</StopOnHover>
+            <SwipeSupport>2</SwipeSupport>
+            <TemplateColor>#ffffff</TemplateColor>
+            <TemplateFont>PT Sans</TemplateFont>
+            <TemplateName>stream</TemplateName>
+            <ThumbAlign>bottom</ThumbAlign>
+            <ThumbFormat>jpg</ThumbFormat>
+            <ThumbHeight>48</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>0</ThumbWidth>
+            <Thumbnails>false</Thumbnails>
+            <TooltipPos>bottom</TooltipPos>
+            <noFrame>0</noFrame>
+        </Settings>
+        <Images RelativePath="false">
+            <Image>
+                <url>C:/Users/W1018122023/Desktop/Corinthians/Images/img 4.png</url>
+                <title>KIT DE CANECAS</title>
+                <filesize>415488</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/W1018122023/Desktop/Corinthians/Images/img 1.png</url>
+                <title>T-SHIRT CORINTHIANS</title>
+                <filesize>431222</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/W1018122023/Desktop/Corinthians/Images/img 5.png</url>
+                <title>Bola de Futebol de Campo Pro Spectrun</title>
+                <filesize>641693</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/W1018122023/Desktop/Corinthians/Images/img 2.png</url>
+                <title>TORCIDA BABY KIT TENIS CORINTHIANS</title>
+                <filesize>520392</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/W1018122023/Desktop/Corinthians/Images/img 3.png</url>
+                <title>CHAVEIRO</title>
+                <filesize>756325</filesize>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>
