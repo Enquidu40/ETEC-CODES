@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulário</title>
+	<style type="text/css">
+		body{
+			font-family: verdana;
+			background-color: #40E0D0;
+		}
+		label{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend><big>Cadastro Pessoal</big></legend>
+		<form>
+			<table height="950px" width="850px" border="1">
+				<tr>
+					<td>
+						<label>
+							Nome:
+						</labe>
+					</td>
+					<td>
+						<input name="nome" type="text" size="40" placeholder="Digite o seu nome">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>
+							Sexo:
+						</label>
+					</td>
+					<td>
+						<input type="radio" name="sexo" value="masc">Masculino
+						<input type="radio" name="sexo" value="fem">Feminino
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>
+							Email:
+						</label>
+					</td>
+					<td>
+						<input type="email" name="email" placeholder="Digite o seu Email">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>
+							Data de Nascimento:
+						</label>
+					</td>
+					<td>
+						<input type="date" name="datanascimento">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>
+							Arquivos:
+						</label>
+					</td>
+					<td>
+						<input type="file" name="arquivo">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>
+							Senha:
+						</label>
+					</td>
+					<td>
+						<input type="password" name="senha" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>
+							CPF:
+						</label>
+					</td>
+					<td>
+						<input type="number" name="cpf" size="13" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>
+							Telefone:
+						</label>
+					</td>
+					<td>
+						<input type="tel" name="telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>
+							Estado:
+						</label>
+					</td>
+					<td>
+						<select name="name">
+							<option value="">&nbsp;</option>
+							<option value="sp">São Paulo</option>
+							<option value="rj">Rio de Janeiro</option>
+							<option value="rs">Rio Grande do Sul</option>
+							<option value="rn">Rio Grande do Norte</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>
+							Cor:
+						</label>
+					</td>
+					<td>
+						<input type="color" name="cor">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>
+							Mensagem:
+						</label>
+					</td>
+					<td>
+						<textarea rows="5" cols="25" name="mensagem"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="checkbox" value="sim" name="contrato">
+						Aceita o contrato
+					</td>
+				</tr>
+				<tr>					
+					<td colspan="2">
+						<input type="reset" value="Limpar">
+						<input type="submit" value="Cadastrar">
+				</td>
+			</table>
+		</form>
+	</fieldset>
+</body>
+</html>
