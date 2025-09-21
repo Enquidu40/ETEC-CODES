@@ -23,27 +23,19 @@ Outros tópicos e ferramentas apresentados em aula
 
 ⚠️ Os códigos têm fins educacionais. Alguns exemplos podem estar simples ou inacabados, pois refletem atividades desenvolvidas durante o processo de aprendizado.
 
-📚 Exercises Repository – Technical Course in Systems Development
+<div style="display: inline_block"><br>
+  <img align="center" alt="Rafa-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="Rafa-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="Rafa-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+  <img align="center" alt="Rafa-PHP" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
+  
+</div>
+ 
+<div> 
+  <a href="http://www.youtube.com/@luis-o_o-h" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
+  <a href="https://www.instagram.com/luish.6_0/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/luis-henrique-santana-da-silva-a629ba377/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+  
+</div>
 
-ETEC de Franco da Rocha
 
-This repository gathers the code developed during the Technical Course in Systems Development at ETEC de Franco da Rocha.
-Its goal is to centralize all exercises, examples, and small projects created throughout the classes, serving as:
-
-A record of learning progress
-
-Study and review material
-
-Reference for future personal or professional projects
-
-Technologies and Languages covered in the course
-
-Web Development: HTML, CSS, JavaScript
-
-Backend and Logic: PHP, Java, C++, C#
-
-Database: MySQL
-
-Other topics and tools introduced in class
-
-⚠️ All code here is for educational purposes. Some examples may be simple or unfinished, as they reflect activities developed during the learning process.
