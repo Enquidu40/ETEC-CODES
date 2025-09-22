@@ -1,0 +1,22 @@
+body {
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #222222; 
+}
+label {
+    display: inline-block;  /* Faz o label se comportar como uma caixinha */
+    width: 200px;           /* Define uma largura fixa */
+    text-align: right;      /* Alinha o texto do label à direita */
+    margin-right: 10px;     /* Espaço entre o label e o campo */
+}
+#cl {
+    display: inline-block;  /* Faz o label se comportar como uma caixinha */
+    width: 200px;           /* Define uma largura fixa */
+    text-align: right;      /* Alinha o texto do label à direita */
+    margin-right: 68px;     /* Espaço entre o label e o campo */
+}
+#p{
+    color:red; font-weight:bold;
+}
